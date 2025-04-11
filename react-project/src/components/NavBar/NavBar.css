@@ -1,0 +1,59 @@
+/* Altura del navbar */
+.custom-navbar {
+  height: 120px;
+  background-color: #f8f3ed;
+  font-family: "Poppins", sans-serif;
+}
+
+/* Imagen del logo */
+.custom-logo {
+  width: 100px;
+  height: auto;
+  margin: 0 20px;
+}
+
+/* Texto del brand */
+.custom-navbar .navbar-brand {
+
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: black;
+}
+
+/* Links del navbar */
+.custom-navbar .nav-link {
+  font-size: 1rem;
+  margin-right: 12px;
+  color: black;
+  font-weight: 500;
+  letter-spacing: 0.5px;
+  transition: color 0.2s ease;
+}
+
+.custom-navbar .nav-link:hover {
+  color: #E9967A;
+}
+
+/* Menú desplegable */
+.custom-navbar .dropdown-menu {
+  background-color: #ffffff;
+  border-radius: 5px;
+}
+
+/* Botones personalizados */
+.custom-navbar .btn {
+  background-color: #f8f3ed;
+  color: black;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
+  border-radius: 50px;
+  font-weight: 500;
+  transition: all 0.2s ease-in-out;
+}
+
+.custom-navbar .btn:hover {
+  background-color: #e6ddd3;
+  color: black;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.25);
+}
