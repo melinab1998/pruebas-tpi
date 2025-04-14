@@ -1,0 +1,72 @@
+.about-us-preview {
+  background-color: #ffffff;
+  font-family: "Poppins", sans-serif;
+  padding: 60px 0;
+}
+
+.about-us-preview h2 {
+  font-size: 2rem;
+  font-weight: 600;
+  color: #000;
+  margin-bottom: 20px;
+}
+
+.about-us-preview p {
+  font-size: 1rem;
+  color: #333;
+  margin-bottom: 30px;
+  line-height: 1.6;
+}
+
+.about-us-preview .btn-custom {
+  background-color: #fbe7d7;
+  color: black;
+  border: 2px solid rgba(0, 0, 0, 0.2);
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
+  font-weight: 500;
+  padding: 8px 20px;
+  font-size: 1rem;
+  transition: all 0.2s ease-in-out;
+}
+
+.about-us-preview .btn-custom:hover {
+  background-color:#f29a8e ;
+  color: white;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.25);
+  border-color: #f29a8e ;
+}
+
+.about-us-preview .preview-img {
+  width: 100%;
+  max-width: 350px;
+  height: auto;
+  border-radius: 50%;
+  object-fit: cover;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+  margin: 0 auto;
+  display: block;
+}
+
+.about-us-preview .btn-custom:active {
+  background-color: #f29a8e !important;
+  color: white !important;
+  border-color: #f29a8e !important;
+  box-shadow: none !important;
+  outline: none !important;
+}
+
+.about-us-preview .btn-custom:focus {
+  outline: none !important;
+  box-shadow: none !important;
+}
+
+@media (max-width: 768px) {
+  .about-us-preview {
+    text-align: center;
+    margin: 0 10px;
+  }
+  .about-us-preview .preview-img {
+    margin-bottom: 30px;
+    width: 70%;
+  }
+}
