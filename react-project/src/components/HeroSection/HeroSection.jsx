@@ -1,7 +1,7 @@
 import { Container, Button } from "react-bootstrap";
-import "../Hero/Hero.css"
+import "../HeroSection/HeroSection.css"
 
-const Hero = () => {
+const HeroSection = () => {
   return (
     <div className="hero-section d-flex align-items-center">
       <Container className="text-white text-center">
@@ -9,7 +9,7 @@ const Hero = () => {
         <p className="lead">
           El amor no se compra, se adopta.
         </p>
-        <Button className="btn-adopta" size="lg">
+        <Button className="btn-adopta">
           ADOPTÁ
         </Button>
       </Container>
@@ -17,4 +17,4 @@ const Hero = () => {
   );
 };
 
-export default Hero;
+export default HeroSection;

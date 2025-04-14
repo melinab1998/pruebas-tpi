@@ -1,5 +1,5 @@
 import NavBar from "./components/NavBar/NavBar"
-import Hero from "./components/Hero/Hero"
+import HeroSection from "./components/HeroSection/HeroSection"
 
 function App() {
   
@@ -7,7 +7,7 @@ function App() {
   return (
     <div>
       <NavBar/>
-      <Hero/>
+      <HeroSection/>
     </div>
   )
 }
