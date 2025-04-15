@@ -7,12 +7,12 @@ const AboutUs = () => {
         <section className="about-us-section py-5" id="about-us">
             <Container>
                 <Row className="align-items-center">
-                <Col md={6} className="mb-4 mb-md-0">
-                        <h2 className="fw-bold mb-3">Sobre nosotros</h2>
-                        <p className="mb-3">
+                <Col md={6} className="mb-4 mb-md-0 about-us-info">
+                        <h2 className="fw-bold mb-3 about-us-title">Sobre nosotros</h2>
+                        <p className="mb-3 about-us-p">
                             Somos un grupo de personas comprometidas con mejorar la vida de perros y gatos en situación vulnerable.
                         </p>
-                        <p className="mb-4">
+                        <p className="mb-4 about-us-p">
                             Creamos esta plataforma para fomentar la adopción responsable y ayudar a reencontrar mascotas perdidas con sus familias.
                         </p>
                         <Button variant="outline-dark" className="custom-btn-contactanos">
