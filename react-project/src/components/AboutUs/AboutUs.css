@@ -1,0 +1,39 @@
+.about-us-section {
+    background-color: #fff8f4; /* tono cálido y suave */
+    padding: 3rem 0;
+}
+
+.icon-style {
+    font-size: 2.5rem;
+    color: #f29a8e;
+    transition: transform 0.3s ease, color 0.3s ease;
+    display: inline-block;
+}
+
+.icon-box:hover .icon-style {
+    transform: scale(1.15);
+    color: #d66b5f; /* un tono más fuerte al hacer hover */
+}
+
+.icon-box h6 {
+    margin-top: 1rem;
+    font-weight: 600;
+}
+
+.icon-box p {
+    font-size: 0.9rem;
+    color: #444;
+}
+
+.custom-btn-contactanos {
+    border: 2px solid #f29a8e !important;
+    color: #f29a8e !important;
+    font-weight: 500 !important;
+    transition: all 0.3s ease !important;
+}
+
+.custom-btn-contactanos:hover {
+    background-color: #f29a8e !important;
+    color: white !important;
+}
+
