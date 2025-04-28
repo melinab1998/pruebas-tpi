@@ -1,19 +1,13 @@
 import React from 'react';
-import './Meet.css';
+import './Pets.css';
 import { useState } from 'react';
 import { Container, Row, Col, Card, Button } from 'react-bootstrap';
-import gatoFilter from '../../img/gato-filter.png';
-import perroFilter from '../../img/perro-filter.png';
-import ambosFilter from '../../img/ambos-filter.png';
+import gatoFilter from "../../../img/gato-filter.png"
+import perroFilter from '../../../img/perro-filter.png';
+import ambosFilter from '../../../img/ambos-filter.png';
+import {Link} from "react-router-dom"
 
-const pets = [
-  { id: 1, name: 'Michi', type: 'gato', age: 1, race: 'Desconocida', description: 'Dulce y dormilona, perfecta para una vida tranquila.', img: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRdAuQr8svvu1MbMWsR2m4Ewtpdj2qLHXWWhA&s' },
-  { id: 2, name: 'Firulais', type: 'perro', age: 1, race: 'Desconocida', description: ' Juguetón y muy leal, ideal para familias activas.', img: 'https://www.lanacion.com.ar/resizer/v2/el-interrogante-requiere-de-un-nuevo-orden-FHNNVHNWPNHJXBGQMNPDEULCPU.jpg?auth=9ff82c664787a5ef88400b2131451663992638ce3463a45806be23b0f7a7dae7&width=880&height=586&quality=70&smart=true' },
-  { id: 3, name: 'Bigotes', type: 'gato', age: 5, race: 'Desconocida', description: 'Curioso y simpático, siempre está buscando mimos.', img: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQV4ViXIUoEDKW539EcxA19WNaGkiKuiFWu8A&s' },
-  { id: 4, name: 'Rocky', type: 'perro', age: 6, race: 'Desconocida', description: 'Energético y obediente, siempre listo para una caminata.', img: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS5EiaCiydl3CZ863HK2J5D99ZnDpkY8P7pmA&s' },
-];
-
-const Meet = () => {
+const Pets = ({pets}) => {
   const [filter, setFilter] = useState('all')
 
   const filteredPets = pets.filter((p)=>{
@@ -49,9 +43,9 @@ const Meet = () => {
               <Card.Text className="text">
                 <div>Edad: {p.age}</div>
                 <div>Raza: {p.race}</div>
-                <div>Descripción: {p.description}</div>
+                <div>Descripción: {p.shortDescription}</div>
               </Card.Text>
-              <Button className="button">Solicitar adopción</Button>
+              <Link to={`/pets/${p.id}`}><Button className="button">Conocer más</Button></Link>
             </Card.Body>
           </Card>
         </Col>
@@ -62,4 +56,4 @@ const Meet = () => {
 }
 
 
-export default Meet
+export default Pets
